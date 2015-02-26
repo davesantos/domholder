@@ -1,3 +1,1 @@
-
-Personal boilerplate of Dave Santos
-
+dominicsantos.com

@@ -58,7 +58,8 @@ gulp.task('watch', function(){
 	livereload.listen();
 	gulp.watch( paths.sass + '/**/*.{sass,scss}', ['compass']);
 	gulp.watch('./*.jade', ['jade']);
-	gulp.watch(['./js/*']).on('change', livereload.changed );
+	// gulp.watch(['./js/*']).on('change', livereload.changed );
+	gulp.watch(['./js/*.js'], ['compress']);
 })
 
 gulp.task('default', ['compass', 'watch']);

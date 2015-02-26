@@ -5,7 +5,6 @@ var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	jade = require('gulp-jade'),
 	livereload = require('gulp-livereload'),
-	prettify = require	('gulp-prettify'),
 	uglify = require('gulp-uglify');
 
 
@@ -47,18 +46,6 @@ gulp.task('jade', function(){
 		.pipe(livereload());
 	gutil.log(gutil.colors.green('jade reloaded'));
 })
-
-gulp.task('indent', function(){
-	gulp.src('*.html')
-		.pipe(prettify({
-			indent_inner_html: true,
-			indent_with_tabs: true,
-			indent_char:"	",
-			indent_size: 1,
-			preserve_newlines: false
-		}))
-		.pipe(gulp.dest('.'));
-});
 
 gulp.task('compress', function() {
   gulp.src([ 'js/libs/*.js', 'js/all.js' ])

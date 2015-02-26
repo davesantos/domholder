@@ -1,0 +1,69 @@
+@import base
+
++establish-baseline
+
+
+$color-base: #666
+$color-accent: #afa31f
+
+
+*
+  +box-sizing(border-box)
+
+body
+  background: #fff
+  color: $color-base
+  font-family: 'Karla', sans-serif
+
+a
+  text-decoration: none
+  border-bottom: 2px solid transparent
+  color: $color-base
+  +single-transition(border-bottom, 500ms, ease)
+  &:hover
+    border-bottom: 2px solid $color-accent
+
+nav ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+img, video, object, embed
+  max-width: 100%
+  height: auto !important
+
+img
+  opacity: 0
+  transition: opacity 350ms linear
+
+
+//================================
+// Structure
+//================================
+
+.header
+  max-width: 640px
+  margin: 0 auto
+
+.headline
+  font-size: inherit
+  font-weight: normal
+  margin: 0
+
+.cover
+  min-height: 100%
+  min-height: 100vh
+  padding: 0 gutter()
+  width: calc(100vw-gutter() * 2)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.inner
+  text-align: center
+
+@media only screen and (min-width: 768px)
+  @import _768
+@media only screen and (min-width: 1030px)
+@media only screen and (min-width: 1240px)

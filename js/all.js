@@ -14,7 +14,7 @@ feed = new Instafeed({
         resolution: 'standard_resolution',
         links: 'false',
         limit: '10',
-        template: '<img draggable="false" data-src="{{image}}" src="" />',
+        template: '<a href="{{link}}"><img draggable="false" data-src="{{image}}" src="" /></a>',
   mock: true,
   custom: {
     images: [],

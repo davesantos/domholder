@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Karla);
+html {
+  font-size: 125%;
+  line-height: 1.8em;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #666;
+  font-family: "Karla", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  color: #666;
+  -moz-transition: border-bottom 500ms ease;
+  -o-transition: border-bottom 500ms ease;
+  -webkit-transition: border-bottom 500ms ease;
+  transition: border-bottom 500ms ease;
+}
+a:hover {
+  border-bottom: 2px solid #afa31f;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img, video, object, embed {
+  max-width: 100%;
+  height: auto !important;
+}
+
+img {
+  opacity: 0;
+  transition: opacity 350ms linear;
+}
+
+#instafeed a {
+  border: none;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+#instafeed a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+.header {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+.cover {
+  min-height: 100%;
+  min-height: 100vh;
+  padding: 0 1.66415%;
+  width: calc(100vw-gutter() * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+  }
+  .content .inner {
+    margin-left: 8.47201%;
+    margin-right: 8.47201%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 1em;
+    flex-direction: column;
+  }
+}

@@ -45,6 +45,9 @@ img {
   transition: opacity 350ms linear;
 }
 
+#instafeed {
+  padding: 1.8rem 0;
+}
 #instafeed a {
   border: none;
   -moz-transition: all 1s;

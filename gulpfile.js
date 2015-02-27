@@ -22,7 +22,7 @@ function errorHandler(error) {
 
 // Compass compile and livereload
 gulp.task('compass', function(){
-	gutil.log(gutil.colors.yellow('live reloaded'));
+	// gutil.log(gutil.colors.yellow('live reloaded'));
 	return gulp.src(paths.sass + '/*.{sass,scss}')
 		// .pipe(changed('css', {extension: '.css'}))
 		.pipe(compass({
